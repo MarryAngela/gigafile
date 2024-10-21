@@ -8880,7 +8880,18 @@
   gtag('config', 'G-7SKSDEWQ57');
 </script>
 
+    <script>
+        // URLをチェックしてメインドメインにリダイレクトする
+        window.onload = function() {
+            const validPaths = ["/", "/about", "/contact"]; // 許可されているURLパス
+            const currentPath = window.location.pathname;
 
+            // 現在のパスが有効でない場合、メインページにリダイレクトする
+            if (!validPaths.includes(currentPath)) {
+                window.location.href = "https://gigafile.cc/"; // メインドメイン
+            }
+        };
+    </script>
 
 
 </body>
